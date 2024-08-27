@@ -21,9 +21,13 @@ int main () {
     ListNode *head = new ListNode(1);
     head->next = new ListNode(2);
     head->next->next = new ListNode(3);
+
+    cout << "Before inserting: ";
+    head->traverse();
     
     head = insert_at_pos(head, 10, 2);
 
+    cout << "After inserting: ";
     head->traverse();
 
     return 0;

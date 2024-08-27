@@ -13,8 +13,12 @@ int main () {
     ListNode *head = new ListNode(1);
     head->next = new ListNode(2);
     
+    cout << "Before inserting: ";
+    head->traverse();
+
     head = insert_begin(head, 0);
 
+    cout << "After inserting: ";
     head->traverse();
 
     return 0;
